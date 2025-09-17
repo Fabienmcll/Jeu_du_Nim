@@ -29,11 +29,11 @@
         private void InitializeComponent()
         {
             label1 = new Label();
-            button1 = new Button();
+            btnConnexion = new Button();
             tableLayoutPanel1 = new TableLayoutPanel();
             button2 = new Button();
-            textBox1 = new TextBox();
-            textBox2 = new TextBox();
+            txtPseudoConnexion = new TextBox();
+            txtMotDePasseConnexion = new TextBox();
             tableLayoutPanel1.SuspendLayout();
             SuspendLayout();
             // 
@@ -49,16 +49,16 @@
             label1.Text = "Jeu de Nim - Connexion";
             label1.TextAlign = ContentAlignment.TopCenter;
             // 
-            // button1
+            // btnConnexion
             // 
-            button1.Anchor = AnchorStyles.Top;
-            button1.Location = new Point(355, 163);
-            button1.Name = "button1";
-            button1.Size = new Size(202, 32);
-            button1.TabIndex = 1;
-            button1.Text = "Se connecter";
-            button1.UseVisualStyleBackColor = true;
-            button1.Click += button1_Click;
+            btnConnexion.Anchor = AnchorStyles.Top;
+            btnConnexion.Location = new Point(355, 163);
+            btnConnexion.Name = "btnConnexion";
+            btnConnexion.Size = new Size(202, 32);
+            btnConnexion.TabIndex = 1;
+            btnConnexion.Text = "Se connecter";
+            btnConnexion.UseVisualStyleBackColor = true;
+            btnConnexion.Click += btnConnexion_Click;
             // 
             // tableLayoutPanel1
             // 
@@ -67,10 +67,10 @@
             tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle());
             tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
             tableLayoutPanel1.Controls.Add(label1, 1, 0);
-            tableLayoutPanel1.Controls.Add(button1, 1, 3);
+            tableLayoutPanel1.Controls.Add(btnConnexion, 1, 3);
             tableLayoutPanel1.Controls.Add(button2, 1, 4);
-            tableLayoutPanel1.Controls.Add(textBox1, 1, 1);
-            tableLayoutPanel1.Controls.Add(textBox2, 1, 2);
+            tableLayoutPanel1.Controls.Add(txtPseudoConnexion, 1, 1);
+            tableLayoutPanel1.Controls.Add(txtMotDePasseConnexion, 1, 2);
             tableLayoutPanel1.Dock = DockStyle.Fill;
             tableLayoutPanel1.Location = new Point(0, 0);
             tableLayoutPanel1.Name = "tableLayoutPanel1";
@@ -96,22 +96,22 @@
             button2.UseVisualStyleBackColor = true;
             button2.Click += button2_Click;
             // 
-            // textBox1
+            // txtPseudoConnexion
             // 
-            textBox1.Anchor = AnchorStyles.Top;
-            textBox1.Location = new Point(355, 83);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(202, 27);
-            textBox1.TabIndex = 3;
+            txtPseudoConnexion.Anchor = AnchorStyles.Top;
+            txtPseudoConnexion.Location = new Point(355, 83);
+            txtPseudoConnexion.Name = "txtPseudoConnexion";
+            txtPseudoConnexion.Size = new Size(202, 27);
+            txtPseudoConnexion.TabIndex = 3;
             // 
-            // textBox2
+            // txtMotDePasseConnexion
             // 
-            textBox2.Anchor = AnchorStyles.Top;
-            textBox2.Location = new Point(355, 123);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(202, 27);
-            textBox2.TabIndex = 4;
-            textBox2.UseSystemPasswordChar = true;
+            txtMotDePasseConnexion.Anchor = AnchorStyles.Top;
+            txtMotDePasseConnexion.Location = new Point(355, 123);
+            txtMotDePasseConnexion.Name = "txtMotDePasseConnexion";
+            txtMotDePasseConnexion.Size = new Size(202, 27);
+            txtMotDePasseConnexion.TabIndex = 4;
+            txtMotDePasseConnexion.UseSystemPasswordChar = true;
             // 
             // Connexion
             // 
@@ -131,10 +131,10 @@
         #endregion
 
         private Label label1;
-        private Button button1;
+        private Button btnConnexion;
         private TableLayoutPanel tableLayoutPanel1;
         private Button button2;
-        private TextBox textBox1;
-        private TextBox textBox2;
+        private TextBox txtPseudoConnexion;
+        private TextBox txtMotDePasseConnexion;
     }
 }
