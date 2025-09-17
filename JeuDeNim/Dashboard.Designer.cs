@@ -148,6 +148,7 @@
             btnCreer.TabIndex = 7;
             btnCreer.Text = "Créer une partie";
             btnCreer.UseVisualStyleBackColor = true;
+            btnCreer.Click += btnCreer_Click;
             // 
             // lblConnecte
             // 

@@ -1,6 +1,6 @@
 ﻿namespace JeuDeNim
 {
-    partial class Partie
+    partial class FrmPartie
     {
         /// <summary>
         /// Required designer variable.
@@ -180,7 +180,7 @@
             button1.Text = "Lancer la partie";
             button1.UseVisualStyleBackColor = false;
             // 
-            // Partie
+            // FrmPartie
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -188,7 +188,7 @@
             Controls.Add(tableLayoutPanel1);
             Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             Margin = new Padding(3, 4, 3, 4);
-            Name = "Partie";
+            Name = "FrmPartie";
             Text = "Créer une partie";
             tableLayoutPanel1.ResumeLayout(false);
             tableLayoutPanel1.PerformLayout();

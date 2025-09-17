@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace JeuDeNim
 {
-    public partial class Partie : Form
+    public partial class FrmPartie : Form
     {
-        public Partie()
+        public FrmPartie()
         {
             InitializeComponent();
         }

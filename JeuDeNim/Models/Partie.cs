@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace JeuDeNim.Models;
 
@@ -25,7 +27,7 @@ public partial class Partie
 
     public int IdJoueur1 { get; set; }
 
-    public int IdJoueur2 { get; set; }
+    public int? IdJoueur2 { get; set; }
 
     public virtual Utilisateur IdJoueur1Navigation { get; set; } = null!;
 
