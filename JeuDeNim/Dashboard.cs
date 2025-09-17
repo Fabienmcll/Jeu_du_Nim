@@ -22,5 +22,13 @@ namespace JeuDeNim
         {
             lblConnecte.Text = "Connecté en tant que : " + SessionManager.CurrentUser.Pseudo;
         }
+
+        private void btnDeconnexion_Click(object sender, EventArgs e)
+        {
+            SessionManager.Logout();
+            Connexion connexion = new Connexion();
+            connexion.Show();
+            this.Close();
+        }
     }
 }

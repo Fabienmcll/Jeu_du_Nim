@@ -94,6 +94,7 @@
             btnDeconnexion.TabIndex = 1;
             btnDeconnexion.Text = "Deconnexion";
             btnDeconnexion.UseVisualStyleBackColor = false;
+            btnDeconnexion.Click += btnDeconnexion_Click;
             // 
             // btnMonCompte
             // 
