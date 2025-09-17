@@ -70,7 +70,13 @@ namespace JeuDeNim
                     int result = db.SaveChanges();
 
                     if (result > 0)
-                        MessageBox.Show("Partie créée avec succès !");
+                    {
+                        FrmPartie frmPartie = new FrmPartie(partie);
+                        frmPartie.Show();
+                        this.Close();
+                    }
+                        
+
                     else
                         MessageBox.Show("Échec de la création !");
                 }
@@ -85,7 +91,7 @@ namespace JeuDeNim
 
         private string RandomCode()
         {
-            var chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+            var chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
             var random = new Random();
             var result = new string(
                 Enumerable.Repeat(chars, 5)

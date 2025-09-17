@@ -34,11 +34,11 @@
             btnDeconnexion = new Button();
             btnMonCompte = new Button();
             label1 = new Label();
-            textBox1 = new TextBox();
             label3 = new Label();
-            listBox1 = new ListBox();
+            lbJoueurs = new ListBox();
             btnRetour = new Button();
             button1 = new Button();
+            lblCode = new Label();
             timer1 = new System.Windows.Forms.Timer(components);
             tableLayoutPanel1.SuspendLayout();
             SuspendLayout();
@@ -53,11 +53,11 @@
             tableLayoutPanel1.Controls.Add(btnDeconnexion, 2, 9);
             tableLayoutPanel1.Controls.Add(btnMonCompte, 0, 9);
             tableLayoutPanel1.Controls.Add(label1, 1, 1);
-            tableLayoutPanel1.Controls.Add(textBox1, 1, 2);
             tableLayoutPanel1.Controls.Add(label3, 1, 4);
-            tableLayoutPanel1.Controls.Add(listBox1, 1, 6);
+            tableLayoutPanel1.Controls.Add(lbJoueurs, 1, 6);
             tableLayoutPanel1.Controls.Add(btnRetour, 0, 8);
             tableLayoutPanel1.Controls.Add(button1, 1, 8);
+            tableLayoutPanel1.Controls.Add(lblCode, 1, 2);
             tableLayoutPanel1.Dock = DockStyle.Fill;
             tableLayoutPanel1.Location = new Point(0, 0);
             tableLayoutPanel1.Name = "tableLayoutPanel1";
@@ -74,6 +74,7 @@
             tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Absolute, 40F));
             tableLayoutPanel1.Size = new Size(914, 441);
             tableLayoutPanel1.TabIndex = 5;
+            tableLayoutPanel1.Paint += tableLayoutPanel1_Paint;
             // 
             // label2
             // 
@@ -124,14 +125,6 @@
             label1.TabIndex = 3;
             label1.Text = "Code d'invitation";
             // 
-            // textBox1
-            // 
-            textBox1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            textBox1.Location = new Point(325, 123);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(263, 27);
-            textBox1.TabIndex = 4;
-            // 
             // label3
             // 
             label3.Anchor = AnchorStyles.None;
@@ -144,15 +137,15 @@
             label3.TabIndex = 5;
             label3.Text = "Liste des joueurs";
             // 
-            // listBox1
+            // lbJoueurs
             // 
-            listBox1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            listBox1.FormattingEnabled = true;
-            listBox1.ItemHeight = 20;
-            listBox1.Location = new Point(325, 243);
-            listBox1.Name = "listBox1";
-            listBox1.Size = new Size(263, 124);
-            listBox1.TabIndex = 6;
+            lbJoueurs.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            lbJoueurs.FormattingEnabled = true;
+            lbJoueurs.ItemHeight = 20;
+            lbJoueurs.Location = new Point(325, 243);
+            lbJoueurs.Name = "lbJoueurs";
+            lbJoueurs.Size = new Size(263, 124);
+            lbJoueurs.TabIndex = 6;
             // 
             // btnRetour
             // 
@@ -180,6 +173,15 @@
             button1.Text = "Lancer la partie";
             button1.UseVisualStyleBackColor = false;
             // 
+            // lblCode
+            // 
+            lblCode.AutoSize = true;
+            lblCode.Location = new Point(325, 120);
+            lblCode.Name = "lblCode";
+            lblCode.Size = new Size(15, 20);
+            lblCode.TabIndex = 9;
+            lblCode.Text = "-";
+            // 
             // FrmPartie
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -202,11 +204,11 @@
         private Button btnDeconnexion;
         private Button btnMonCompte;
         private Label label1;
-        private TextBox textBox1;
         private Label label3;
-        private ListBox listBox1;
+        private ListBox lbJoueurs;
         private Button btnRetour;
         private Button button1;
         private System.Windows.Forms.Timer timer1;
+        private Label lblCode;
     }
 }
