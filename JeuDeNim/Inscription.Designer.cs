@@ -150,6 +150,7 @@
             textBox4.Name = "textBox4";
             textBox4.Size = new Size(202, 27);
             textBox4.TabIndex = 6;
+            textBox4.UseSystemPasswordChar = true;
             // 
             // label3
             // 
