@@ -64,16 +64,16 @@
             tableLayoutPanel1.Controls.Add(txtNomInscription, 1, 2);
             tableLayoutPanel1.Controls.Add(txtPrenomInscription, 1, 3);
             tableLayoutPanel1.Controls.Add(button1, 1, 6);
-            tableLayoutPanel1.Controls.Add(button2, 1, 7);
             tableLayoutPanel1.Controls.Add(txtMdpInscription, 1, 4);
             tableLayoutPanel1.Controls.Add(label3, 0, 1);
             tableLayoutPanel1.Controls.Add(Nom, 0, 2);
             tableLayoutPanel1.Controls.Add(label5, 0, 3);
             tableLayoutPanel1.Controls.Add(label6, 0, 4);
+            tableLayoutPanel1.Controls.Add(button2, 1, 9);
             tableLayoutPanel1.Dock = DockStyle.Fill;
             tableLayoutPanel1.Location = new Point(0, 0);
             tableLayoutPanel1.Name = "tableLayoutPanel1";
-            tableLayoutPanel1.RowCount = 9;
+            tableLayoutPanel1.RowCount = 11;
             tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Absolute, 80F));
             tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Absolute, 40F));
             tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Absolute, 40F));
@@ -82,7 +82,9 @@
             tableLayoutPanel1.RowStyles.Add(new RowStyle());
             tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Absolute, 37F));
             tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Absolute, 41F));
-            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Absolute, 8F));
+            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Absolute, 46F));
+            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Absolute, 43F));
+            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Absolute, 93F));
             tableLayoutPanel1.Size = new Size(1045, 664);
             tableLayoutPanel1.TabIndex = 3;
             // 
@@ -136,7 +138,7 @@
             // button2
             // 
             button2.Anchor = AnchorStyles.Top;
-            button2.Location = new Point(421, 280);
+            button2.Location = new Point(421, 367);
             button2.Name = "button2";
             button2.Size = new Size(202, 32);
             button2.TabIndex = 2;
