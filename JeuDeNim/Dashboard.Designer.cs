@@ -36,6 +36,7 @@
             label1 = new Label();
             btnRejoindre = new Button();
             btnCreer = new Button();
+            lblConnecte = new Label();
             tableLayoutPanel1.SuspendLayout();
             SuspendLayout();
             // 
@@ -52,6 +53,7 @@
             tableLayoutPanel1.Controls.Add(label1, 1, 1);
             tableLayoutPanel1.Controls.Add(btnRejoindre, 1, 3);
             tableLayoutPanel1.Controls.Add(btnCreer, 1, 6);
+            tableLayoutPanel1.Controls.Add(lblConnecte, 0, 0);
             tableLayoutPanel1.Dock = DockStyle.Fill;
             tableLayoutPanel1.Location = new Point(0, 0);
             tableLayoutPanel1.Name = "tableLayoutPanel1";
@@ -146,6 +148,15 @@
             btnCreer.Text = "Créer une partie";
             btnCreer.UseVisualStyleBackColor = true;
             // 
+            // lblConnecte
+            // 
+            lblConnecte.AutoSize = true;
+            lblConnecte.Location = new Point(3, 0);
+            lblConnecte.Name = "lblConnecte";
+            lblConnecte.Size = new Size(15, 20);
+            lblConnecte.TabIndex = 8;
+            lblConnecte.Text = "-";
+            // 
             // Dashboard
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -156,6 +167,7 @@
             Margin = new Padding(3, 4, 3, 4);
             Name = "Dashboard";
             Text = "Jeu du Nim - Dashboard";
+            Load += Dashboard_Load;
             tableLayoutPanel1.ResumeLayout(false);
             tableLayoutPanel1.PerformLayout();
             ResumeLayout(false);
@@ -171,5 +183,6 @@
         private Label label1;
         private Button btnRejoindre;
         private Button btnCreer;
+        private Label lblConnecte;
     }
 }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using JeuDeNim.Class;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,11 @@ namespace JeuDeNim
         public Dashboard()
         {
             InitializeComponent();
+        }
+
+        private void Dashboard_Load(object sender, EventArgs e)
+        {
+            lblConnecte.Text = "Connecté en tant que : " + SessionManager.CurrentUser.Pseudo;
         }
     }
 }

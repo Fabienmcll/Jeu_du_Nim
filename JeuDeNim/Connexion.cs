@@ -57,7 +57,9 @@ namespace JeuDeNim
                     try
                     {
                         SessionManager.Login(user);
-
+                        Dashboard dashboard = new Dashboard();
+                        dashboard.Show();
+                        this.Hide();
                     }
                     catch (Exception erreur)
                     {
