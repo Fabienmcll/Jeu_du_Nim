@@ -36,12 +36,12 @@ namespace JeuDeNim
 
         private void btnCreer_Click(object sender, EventArgs e)
         {
-            
+
             Random rnd = new Random();
             string code = RandomCode();
 
             Random btn = new Random();
-            int nbBatonnets = btn.Next(16, 22); 
+            int nbBatonnets = btn.Next(16, 22);
 
 
             Partie partie = new Partie();
@@ -66,7 +66,7 @@ namespace JeuDeNim
             {
                 using (var db = new FortBoyardDjessimKilianFabienContext())
                 {
-                    db.Parties.Add(partie); 
+                    db.Parties.Add(partie);
                     int result = db.SaveChanges();
 
                     if (result > 0)
@@ -75,7 +75,7 @@ namespace JeuDeNim
                         frmPartie.Show();
                         this.Close();
                     }
-                        
+
 
                     else
                         MessageBox.Show("Échec de la création !");
@@ -113,6 +113,30 @@ namespace JeuDeNim
                 else
                 {
                     return false;
+                }
+            }
+        }
+
+        private void btnRejoindre_Click(object sender, EventArgs e)
+        {
+            if (txtCode.Text == "")
+            {
+                MessageBox.Show("Veuillez entrer un code");
+                return;
+            }
+            using (FortBoyardDjessimKilianFabienContext db = new FortBoyardDjessimKilianFabienContext())
+            {
+                Partie searchPartie = db.Parties.Where(o => o.CodePartie == txtCode.Text).FirstOrDefault();
+                if (searchPartie != null)
+                {
+                    searchPartie.IdJoueur2 = SessionManager.CurrentUser.IdJoueur;
+                    db.SaveChanges();
+                    FrmPartie frmPartie = new FrmPartie(searchPartie);
+                    frmPartie.Show();
+                }
+                else
+                {
+                    MessageBox.Show("Code incorrect");
                 }
             }
         }

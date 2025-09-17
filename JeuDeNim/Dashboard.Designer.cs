@@ -32,7 +32,7 @@
             label2 = new Label();
             btnDeconnexion = new Button();
             btnMonCompte = new Button();
-            txbxCode = new TextBox();
+            txtCode = new TextBox();
             label1 = new Label();
             btnRejoindre = new Button();
             btnCreer = new Button();
@@ -49,7 +49,7 @@
             tableLayoutPanel1.Controls.Add(label2, 1, 0);
             tableLayoutPanel1.Controls.Add(btnDeconnexion, 2, 9);
             tableLayoutPanel1.Controls.Add(btnMonCompte, 0, 9);
-            tableLayoutPanel1.Controls.Add(txbxCode, 1, 2);
+            tableLayoutPanel1.Controls.Add(txtCode, 1, 2);
             tableLayoutPanel1.Controls.Add(label1, 1, 1);
             tableLayoutPanel1.Controls.Add(btnRejoindre, 1, 3);
             tableLayoutPanel1.Controls.Add(btnCreer, 1, 6);
@@ -109,12 +109,12 @@
             btnMonCompte.Text = "Mon compte";
             btnMonCompte.UseVisualStyleBackColor = false;
             // 
-            // txbxCode
+            // txtCode
             // 
-            txbxCode.Location = new Point(344, 123);
-            txbxCode.Name = "txbxCode";
-            txbxCode.Size = new Size(226, 27);
-            txbxCode.TabIndex = 3;
+            txtCode.Location = new Point(344, 123);
+            txtCode.Name = "txtCode";
+            txtCode.Size = new Size(226, 27);
+            txtCode.TabIndex = 3;
             // 
             // label1
             // 
@@ -137,6 +137,7 @@
             btnRejoindre.TabIndex = 6;
             btnRejoindre.Text = "Rejoindre";
             btnRejoindre.UseVisualStyleBackColor = true;
+            btnRejoindre.Click += btnRejoindre_Click;
             // 
             // btnCreer
             // 
@@ -181,7 +182,7 @@
         private Label label2;
         private Button btnDeconnexion;
         private Button btnMonCompte;
-        private TextBox txbxCode;
+        private TextBox txtCode;
         private Label label1;
         private Button btnRejoindre;
         private Button btnCreer;

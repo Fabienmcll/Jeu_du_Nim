@@ -40,6 +40,7 @@
             button1 = new Button();
             lblCode = new Label();
             timer1 = new System.Windows.Forms.Timer(components);
+            timerJoueur = new System.Windows.Forms.Timer(components);
             tableLayoutPanel1.SuspendLayout();
             SuspendLayout();
             // 
@@ -182,6 +183,10 @@
             lblCode.TabIndex = 9;
             lblCode.Text = "-";
             // 
+            // timerJoueur
+            // 
+            timerJoueur.Interval = 200;
+            // 
             // FrmPartie
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -210,5 +215,6 @@
         private Button button1;
         private System.Windows.Forms.Timer timer1;
         private Label lblCode;
+        private System.Windows.Forms.Timer timerJoueur;
     }
 }
