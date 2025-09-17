@@ -31,11 +31,11 @@
             label1 = new Label();
             tableLayoutPanel1 = new TableLayoutPanel();
             label2 = new Label();
-            button1 = new Button();
-            button2 = new Button();
             textBox1 = new TextBox();
             textBox2 = new TextBox();
             textBox3 = new TextBox();
+            button1 = new Button();
+            button2 = new Button();
             textBox4 = new TextBox();
             label3 = new Label();
             Nom = new Label();
@@ -98,26 +98,6 @@
             label2.Text = "Jeu de Nim - Inscription";
             label2.TextAlign = ContentAlignment.TopCenter;
             // 
-            // button1
-            // 
-            button1.Anchor = AnchorStyles.Top;
-            button1.Location = new Point(421, 243);
-            button1.Name = "button1";
-            button1.Size = new Size(202, 31);
-            button1.TabIndex = 1;
-            button1.Text = "Inscription";
-            button1.UseVisualStyleBackColor = true;
-            // 
-            // button2
-            // 
-            button2.Anchor = AnchorStyles.Top;
-            button2.Location = new Point(421, 280);
-            button2.Name = "button2";
-            button2.Size = new Size(202, 32);
-            button2.TabIndex = 2;
-            button2.Text = "Se connecter";
-            button2.UseVisualStyleBackColor = true;
-            // 
             // textBox1
             // 
             textBox1.Anchor = AnchorStyles.None;
@@ -141,6 +121,27 @@
             textBox3.Name = "textBox3";
             textBox3.Size = new Size(202, 27);
             textBox3.TabIndex = 5;
+            // 
+            // button1
+            // 
+            button1.Anchor = AnchorStyles.Top;
+            button1.Location = new Point(421, 243);
+            button1.Name = "button1";
+            button1.Size = new Size(202, 31);
+            button1.TabIndex = 1;
+            button1.Text = "Inscription";
+            button1.UseVisualStyleBackColor = true;
+            // 
+            // button2
+            // 
+            button2.Anchor = AnchorStyles.Top;
+            button2.Location = new Point(421, 280);
+            button2.Name = "button2";
+            button2.Size = new Size(202, 32);
+            button2.TabIndex = 2;
+            button2.Text = "Se connecter";
+            button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
             // 
             // textBox4
             // 

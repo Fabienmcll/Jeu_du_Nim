@@ -93,6 +93,7 @@
             button2.TabIndex = 2;
             button2.Text = "Créer un compte";
             button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
             // 
             // textBox1
             // 
@@ -110,7 +111,7 @@
             textBox2.Size = new Size(202, 27);
             textBox2.TabIndex = 4;
             // 
-            // Form1
+            // Connexion
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -118,7 +119,7 @@
             Controls.Add(tableLayoutPanel1);
             Font = new Font("Segoe UI", 11F);
             Margin = new Padding(3, 4, 3, 4);
-            Name = "Form1";
+            Name = "Connexion";
             Text = "Jeu de Nim - Connexion";
             tableLayoutPanel1.ResumeLayout(false);
             tableLayoutPanel1.PerformLayout();
