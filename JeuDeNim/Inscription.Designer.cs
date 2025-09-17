@@ -31,12 +31,12 @@
             label1 = new Label();
             tableLayoutPanel1 = new TableLayoutPanel();
             label2 = new Label();
-            textBox1 = new TextBox();
-            textBox2 = new TextBox();
-            textBox3 = new TextBox();
+            txtPseudoInscription = new TextBox();
+            txtNomInscription = new TextBox();
+            txtPrenomInscription = new TextBox();
             button1 = new Button();
             button2 = new Button();
-            textBox4 = new TextBox();
+            txtMdpInscription = new TextBox();
             label3 = new Label();
             Nom = new Label();
             label5 = new Label();
@@ -60,12 +60,12 @@
             tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle());
             tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
             tableLayoutPanel1.Controls.Add(label2, 1, 0);
-            tableLayoutPanel1.Controls.Add(textBox1, 1, 1);
-            tableLayoutPanel1.Controls.Add(textBox2, 1, 2);
-            tableLayoutPanel1.Controls.Add(textBox3, 1, 3);
+            tableLayoutPanel1.Controls.Add(txtPseudoInscription, 1, 1);
+            tableLayoutPanel1.Controls.Add(txtNomInscription, 1, 2);
+            tableLayoutPanel1.Controls.Add(txtPrenomInscription, 1, 3);
             tableLayoutPanel1.Controls.Add(button1, 1, 6);
             tableLayoutPanel1.Controls.Add(button2, 1, 7);
-            tableLayoutPanel1.Controls.Add(textBox4, 1, 4);
+            tableLayoutPanel1.Controls.Add(txtMdpInscription, 1, 4);
             tableLayoutPanel1.Controls.Add(label3, 0, 1);
             tableLayoutPanel1.Controls.Add(Nom, 0, 2);
             tableLayoutPanel1.Controls.Add(label5, 0, 3);
@@ -98,29 +98,29 @@
             label2.Text = "Jeu de Nim - Inscription";
             label2.TextAlign = ContentAlignment.TopCenter;
             // 
-            // textBox1
+            // txtPseudoInscription
             // 
-            textBox1.Anchor = AnchorStyles.None;
-            textBox1.Location = new Point(421, 86);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(202, 27);
-            textBox1.TabIndex = 3;
+            txtPseudoInscription.Anchor = AnchorStyles.None;
+            txtPseudoInscription.Location = new Point(421, 86);
+            txtPseudoInscription.Name = "txtPseudoInscription";
+            txtPseudoInscription.Size = new Size(202, 27);
+            txtPseudoInscription.TabIndex = 3;
             // 
-            // textBox2
+            // txtNomInscription
             // 
-            textBox2.Anchor = AnchorStyles.None;
-            textBox2.Location = new Point(421, 126);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(202, 27);
-            textBox2.TabIndex = 4;
+            txtNomInscription.Anchor = AnchorStyles.None;
+            txtNomInscription.Location = new Point(421, 126);
+            txtNomInscription.Name = "txtNomInscription";
+            txtNomInscription.Size = new Size(202, 27);
+            txtNomInscription.TabIndex = 4;
             // 
-            // textBox3
+            // txtPrenomInscription
             // 
-            textBox3.Anchor = AnchorStyles.None;
-            textBox3.Location = new Point(421, 166);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(202, 27);
-            textBox3.TabIndex = 5;
+            txtPrenomInscription.Anchor = AnchorStyles.None;
+            txtPrenomInscription.Location = new Point(421, 166);
+            txtPrenomInscription.Name = "txtPrenomInscription";
+            txtPrenomInscription.Size = new Size(202, 27);
+            txtPrenomInscription.TabIndex = 5;
             // 
             // button1
             // 
@@ -131,6 +131,7 @@
             button1.TabIndex = 1;
             button1.Text = "Inscription";
             button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
             // button2
             // 
@@ -143,14 +144,14 @@
             button2.UseVisualStyleBackColor = true;
             button2.Click += button2_Click;
             // 
-            // textBox4
+            // txtMdpInscription
             // 
-            textBox4.Anchor = AnchorStyles.None;
-            textBox4.Location = new Point(421, 206);
-            textBox4.Name = "textBox4";
-            textBox4.Size = new Size(202, 27);
-            textBox4.TabIndex = 6;
-            textBox4.UseSystemPasswordChar = true;
+            txtMdpInscription.Anchor = AnchorStyles.None;
+            txtMdpInscription.Location = new Point(421, 206);
+            txtMdpInscription.Name = "txtMdpInscription";
+            txtMdpInscription.Size = new Size(202, 27);
+            txtMdpInscription.TabIndex = 6;
+            txtMdpInscription.UseSystemPasswordChar = true;
             // 
             // label3
             // 
@@ -214,12 +215,12 @@
         private Label label1;
         private TableLayoutPanel tableLayoutPanel1;
         private Label label2;
-        private TextBox textBox1;
-        private TextBox textBox2;
-        private TextBox textBox3;
+        private TextBox txtPseudoInscription;
+        private TextBox txtNomInscription;
+        private TextBox txtPrenomInscription;
         private Button button1;
         private Button button2;
-        private TextBox textBox4;
+        private TextBox txtMdpInscription;
         private Label label3;
         private Label Nom;
         private Label label5;
