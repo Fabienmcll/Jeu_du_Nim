@@ -1,6 +1,6 @@
 ﻿namespace JeuDeNim
 {
-    partial class Form1
+    partial class Connexion
     {
         /// <summary>
         ///  Required designer variable.
@@ -41,16 +41,18 @@
             // 
             label1.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             label1.AutoSize = true;
-            label1.Location = new Point(356, 0);
+            label1.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label1.Location = new Point(343, 0);
             label1.Name = "label1";
-            label1.Size = new Size(202, 20);
+            label1.Size = new Size(227, 25);
             label1.TabIndex = 0;
             label1.Text = "Jeu de Nim - Connexion";
             label1.TextAlign = ContentAlignment.TopCenter;
             // 
             // button1
             // 
-            button1.Location = new Point(356, 163);
+            button1.Anchor = AnchorStyles.Top;
+            button1.Location = new Point(355, 163);
             button1.Name = "button1";
             button1.Size = new Size(202, 32);
             button1.TabIndex = 1;
@@ -84,7 +86,8 @@
             // 
             // button2
             // 
-            button2.Location = new Point(356, 203);
+            button2.Anchor = AnchorStyles.Top;
+            button2.Location = new Point(355, 203);
             button2.Name = "button2";
             button2.Size = new Size(202, 32);
             button2.TabIndex = 2;
@@ -93,14 +96,16 @@
             // 
             // textBox1
             // 
-            textBox1.Location = new Point(356, 83);
+            textBox1.Anchor = AnchorStyles.Top;
+            textBox1.Location = new Point(355, 83);
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(202, 27);
             textBox1.TabIndex = 3;
             // 
             // textBox2
             // 
-            textBox2.Location = new Point(356, 123);
+            textBox2.Anchor = AnchorStyles.Top;
+            textBox2.Location = new Point(355, 123);
             textBox2.Name = "textBox2";
             textBox2.Size = new Size(202, 27);
             textBox2.TabIndex = 4;
