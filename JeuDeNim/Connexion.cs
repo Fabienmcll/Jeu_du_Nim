@@ -14,9 +14,9 @@ namespace JeuDeNim
 
         private void button2_Click(object sender, EventArgs e)
         {
-            this.Close();
             Inscriptioncs inscriptioncs = new Inscriptioncs();
-            inscriptioncs.ShowDialog();
+            inscriptioncs.Show();
+            this.Hide();
         }
     }
 }
