@@ -133,6 +133,7 @@ namespace JeuDeNim
                     db.SaveChanges();
                     FrmPartie frmPartie = new FrmPartie(searchPartie);
                     frmPartie.Show();
+                    this.Close();
                 }
                 else
                 {

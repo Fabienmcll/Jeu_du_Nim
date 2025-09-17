@@ -160,6 +160,7 @@
             btnRetour.TabIndex = 7;
             btnRetour.Text = "Retour";
             btnRetour.UseVisualStyleBackColor = false;
+            btnRetour.Click += btnRetour_Click_1;
             // 
             // button1
             // 
